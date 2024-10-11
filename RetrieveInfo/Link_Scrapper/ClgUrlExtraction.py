@@ -119,7 +119,7 @@ def run(path):
         
 if text_files:
     for i in full_file_path:
-        DicData = []
+        DicData = {}
         print("Running on file: ", i)
         run(i)
         count=+1

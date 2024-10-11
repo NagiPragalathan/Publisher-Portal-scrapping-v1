@@ -1,0 +1,4 @@
+{
+    "24": "St. Joseph's College, Tiruchirappalli\t",
+    "38": "Sacred Heart College (Autonomous)\t"
+}
