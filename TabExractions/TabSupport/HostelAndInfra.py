@@ -102,7 +102,7 @@ def extract_hostel_info(url, verbose):
 
 
 def run():
-    with open(r'C:\Users\Admin\Downloads\Publisher-Portal-scrapping\Publisher-Portal-scrapping-c3f406f7401c74c8741a31781b0a23a10a2fcf9f\TabExractions\TabSupport\data\ClgNames.json', 'r') as data_file:
+    with open(r'C:\Users\Admin\Documents\Work\XtraCut_Works\Publisher-Portal-scrapping-v1\Data\ExtractedData\Links\OutputTop10Design.json', 'r') as data_file:
         college_data = json.load(data_file)
 
     output_json = {}
@@ -116,11 +116,11 @@ def run():
         else:
             output_json[college_url] = "No Fees tab found"
 
-    with open(r"C:\Users\Admin\Downloads\Publisher-Portal-scrapping\Publisher-Portal-scrapping-c3f406f7401c74c8741a31781b0a23a10a2fcf9f\TabExractions\TabSupport\data\InfrastructureOutput.json", 'w') as output_file:
+    with open(r"C:\Users\Admin\Documents\Work\XtraCut_Works\Publisher-Portal-scrapping-v1\Data\ExtractedData\Links\OutputTop10Design.txt", 'w') as output_file:
         json.dump(output_json, output_file, indent=4)
 
     driver.quit()
 
-
+run()
 # url = 'https://www.shiksha.com/college/iit-madras-indian-institute-of-technology-adyar-chennai-3031/infrastructure'
 # extract_hostel_info(url, True)
